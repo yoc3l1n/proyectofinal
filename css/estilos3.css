@@ -1,0 +1,158 @@
+/*CONSIDERACIONES GENERALES*/
+body{
+  background: #02010a;
+  font-family: 'DancingScript', cursive;
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+/*CABEZERA*/
+#contenido {
+	width: 900px;
+	margin: 0 auto;
+}
+
+header{
+  background: #5b7989;
+  border-radius: 10px 10px 0 0;
+  text-shadow: 2px 2px #02010a;
+  padding: 15px 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+#titulo-Cabecera{
+  width: 70%;
+  text-indent: 15px;
+}
+#menu-principal{
+  padding-top:25px;
+  width: 30%;
+  font-size: 18pt;
+}
+#menu-principal a{
+  color:white;
+  text-decoration: underline;
+}
+
+#menu-principal .actual{
+  text-decoration: none;
+}
+/*GALERIA*/
+.contenedor {
+  width: 900px;
+  margin: 0 auto;
+  background: #d5c75f;
+  border: 1px;
+  text-decoration: underline;
+  display: flex;
+  flex-direction: row;
+}
+  .contenedor > div{
+  text-align: center;
+  padding: 10px;
+  width: 40%;
+  }
+  .contenedor img{
+    margin: 10px;
+    width: 80%;
+  }
+/*Efectos de imagenes*/
+@media screen {
+  .image{
+    -webkit-filter:blur(10px);
+    filter:blur(10px);
+}
+  .image2{
+    -webkit-filter:grayscale(10px);
+    filter:grayscale(100%);
+  }
+  .image3{
+    -webkit-filter:sepia(90%);
+    filter:sepia(90%);
+  }
+}
+/*Pie de pagina*/
+.contenedor2{
+  text-align: center;
+  width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #C6d5c5;
+  display: flex;
+  flex-direction: row;
+}
+.contenedor2 > div{
+  text-align: center;
+  padding: 10px;
+  width: 25%;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+.redes img{
+text-align: left;
+width: 20%;
+filter: none;
+border-radius: 10px;
+}
+.derechos img{
+  text-align: left;
+  width: 15%;
+  filter: none;
+  border-radius: 10px;
+  }
+
+/*diseño adaptativo para desktop*/
+@media (min-width: 901px) {
+  #contenido{
+    width: 900px;
+  }
+  #contenedor1{
+    width: 900px;
+    text-align: center;
+  }
+  #contenedor{
+    width: 900px;
+    text-align: center;
+  }
+  #contenedor2{
+    width: 900px;
+  }
+}
+/*diseño adaptativo para moviles*/
+@media (max-width: 900px){
+  /*CABEZERA*/
+  #contenido, #titulo-Cabecera, #menu-principal{
+    width: 100%;
+    text-align: center;
+  }
+  a{
+    margin: 0px 25px;
+  }
+body{/*GENERALES*/
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+#contenedor{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#contenedor div{
+  width: 90%;
+  text-align: center;
+}
+#contenedor2{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#contenedor2 > div{
+  width: 90%;
+}
+}
